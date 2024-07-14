@@ -12,8 +12,8 @@ use wasmer::Value;
 
 #[tokio::main]
 async fn main() {
-    let listener = TcpListener::bind("127.0.0.1:8081").await.unwrap();
-    println!("Server running on 127.0.0.1:8081");
+    let listener = TcpListener::bind("127.0.0.1:8082").await.unwrap();
+    println!("Server running on 127.0.0.1:8082");
     let mut blockchain = Blockchain::new(2);
 
     // Generate key pair for signing transactions
