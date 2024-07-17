@@ -25,16 +25,31 @@ The entry point of the backend application. It sets up a TCP server, initializes
 To run the backend server, use the following command:
 ```sh
 cargo run --bin blockchain_mvp_bin
+```
 
-Frontend
+## Frontend
 
-The frontend is built with Yew, a modern Rust framework for creating web applications with WebAssembly.ComponentsBlockchainComponentFetches and displays the blockchain data from the backend. It includes functionality to make HTTP requests and render the data in the UI.MainThe entry point of the frontend application. It initializes the Yew application and renders the BlockchainComponent.
-Running the Frontend To build and serve the frontend, use the following commands:
+The frontend is built with Yew, a modern Rust framework for creating web applications with WebAssembly.
+
+### Components
+
+#### BlockchainComponent
+Fetches and displays the blockchain data from the backend. It includes functionality to make HTTP requests and render the data in the UI.
+
+#### Main
+The entry point of the frontend application. It initializes the Yew application and renders the `BlockchainComponent`.
+
+### Running the Frontend
+To build and serve the frontend, use the following commands:
+```sh
 trunk build --release
-trunk serve --releaseProject
-trunk serve --open
+trunk serve --release
+```
 
-Structureblockchain_mvp/
+## Project Structure
+
+```
+blockchain_mvp/
 │
 ├── backend/
 │   ├── src/
@@ -63,4 +78,8 @@ Structureblockchain_mvp/
 │
 ├── Cargo.toml
 ├── README.md
+```
 
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
