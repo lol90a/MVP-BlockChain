@@ -1,6 +1,12 @@
-[workspace]
-members = [
-    "backend",
-    "yew_frontend"
-]
-resolver = "2"
+[package]
+name = "blovkchain_mvp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gstd = { git = "https://github.com/gear-tech/gear", tag = "v1.4.0" }
+scale-info = { version = "2", default-features = false }
+parity-scale-codec = { version = "3", default-features = false }
+
+[build-dependencies]
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear", tag = "v1.4.0" }
